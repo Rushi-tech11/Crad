@@ -1,0 +1,110 @@
+body {
+  background-color: #0f0f1a;
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 280px;
+  width: 200px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+  margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  width: 100%;
+  height: 100%;
+  background-color: #2e3033;
+  display: block;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #00c9ff, #92fe9d, #f9d423);
+  animation: fillbar 2s forwards;
+}
+
+@keyframes fillbar {
+  to {
+    width: 80%;
+  }
+}
+
+.circle {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+svg {
+  height: 120px;
+  width: 120px;
+}
+
+.stroke {
+  stroke: #00fff0;
+  fill: none;
+  stroke-width: 10;
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
+  animation: progress 2s forwards;
+}
+
+@keyframes progress {
+  to {
+    stroke-dashoffset: 60;
+  }
+}
+
+

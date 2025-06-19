@@ -72,7 +72,7 @@ Inside the <head>, the page title is defined and the CSS file is linked.
 
 The <body> contains all visible elements like headings and cards.
 
-🏷️ 2. Page Heading
+🏷 2. Page Heading
 A heading is placed at the top using the <h1> tag.
 
 Part of the text (e.g., "HTML" and "CSS") is highlighted using <span> tags for styling.
@@ -97,12 +97,12 @@ A <div class="circle"> is used to visually represent a circular animation.
 
 | HTML Element       | Purpose                                         |
 | ------------------ | ----------------------------------------------- |
-| `<h1>`             | Main title of the page                          |
-| `<span>`           | Highlight specific parts of the title           |
-| `<div>`            | Container for layout and individual cards       |
-| `<p>`              | Label for each card                             |
-| `<link>`           | Connects external CSS file                      |
-| `class` attributes | Used to apply styles and animations through CSS |
+| <h1>             | Main title of the page                          |
+| <span>           | Highlight specific parts of the title           |
+| <div>            | Container for layout and individual cards       |
+| <p>              | Label for each card                             |
+| <link>           | Connects external CSS file                      |
+| class attributes | Used to apply styles and animations through CSS |
 
 
 🎨 CSS Theoretical Information (for This Project)
@@ -146,7 +146,7 @@ The visible part of the border is given a glowing neon effect using gradients or
 
 The circle is animated using CSS transform: rotate() to simulate spinning.
 
-⚙️ 5. Animations
+⚙ 5. Animations
 CSS @keyframes is used to define animations like:
 
 Continuous rotation of the circular loader.
@@ -165,11 +165,10 @@ Transitions add smoothness when any property changes.
 
 | CSS Feature           | Used For                         |
 | --------------------- | -------------------------------- |
-| `display: flex`       | Align cards horizontally         |
-| `border-radius`       | Rounded cards and circle borders |
-| `box-shadow`          | Card glow effect                 |
-| `background-gradient` | Progress bar animation           |
-| `@keyframes`          | Creating animations              |
-| `transform: rotate`   | Circle rotation effect           |
-| `animation`           | Smooth infinite movement         |
-
+| display: flex       | Align cards horizontally         |
+| border-radius       | Rounded cards and circle borders |
+| box-shadow          | Card glow effect                 |
+| background-gradient | Progress bar animation           |
+| @keyframes          | Creating animations              |
+| transform: rotate   | Circle rotation effect           |
+| animation           | Smooth infinite movement         |
